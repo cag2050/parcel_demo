@@ -2,4 +2,4 @@
 .git
 .DS_Store
 node_modules
-.cache
+.cache/
