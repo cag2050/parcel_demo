@@ -137,8 +137,10 @@ module.exports = reloadCSS;
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
-      
-},{"./images/parcel.png":[["0cb062600583ba52b142a125a589809c.png",6],6],"_css_loader":5}],3:[function(require,module,exports) {
+      module.exports = {
+  "main": "_main_1xxh8_1"
+};
+},{"./images/parcel.png":[["34c920309305e26bf380316236165f8f.png",6],6],"_css_loader":5}],3:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -152,22 +154,19 @@ var _main2 = _interopRequireDefault(_main);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function () {
-    console.log(_main2.default);
     console.log(_main2.default.main);
 }; // import a CSS module
 },{"./main.css":4}],2:[function(require,module,exports) {
-"use strict";
+'use strict';
 
-var _main = require("./main");
+var _main = require('./main');
 
 var _main2 = _interopRequireDefault(_main);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _main2.default)(); // import another component
-
-console.log("hello world");
-},{"./main":3}],8:[function(require,module,exports) {
+},{"./main":3}],11:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -189,7 +188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54011' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60118' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -290,5 +289,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[8,2])
-//# sourceMappingURL=/dist/parcel_demo.map
+},{}]},{},[11,2])
+//# sourceMappingURL=/dist/da426cf211832e87a46d5959a3b9297a.map
